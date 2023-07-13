@@ -1,0 +1,10 @@
+#!/bin/bash
+
+echo "Input file name"
+read FileName
+
+echo "#!/bin/bash" > ${FileName}
+
+chmod +x ${FileName}
+
+emacs ${FileName}
